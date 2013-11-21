@@ -13,7 +13,7 @@ public class DoritoClicker extends javax.swing.JFrame {
     Doritos doritos;
     AutoCrumncher ac;
     public DoritoClicker() {
-        ac = new AutoCrumncher(this);
+        ac = new AutoCrumncher(this, "AutoCrumncher");
         doritos = new Doritos();
         initComponents();
         String imagePath = "resource/icon.png";
