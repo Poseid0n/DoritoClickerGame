@@ -236,6 +236,6 @@ public class DoritoClicker extends javax.swing.JFrame {
         jLabel4.setText("AutoCrumncher ("+ac.getAmount()+")");
         jLabel6.setText(doritos.getDoritos() + " doritos to spend.");
         jLabel8.setText(dbm.getPrice()+"");
-        jLabel7.setText("Dashing Black Man("+ac.getAmount()+")");
+        jLabel7.setText("Dashing Black Man("+dbm.getAmount()+")");
     }
 }
