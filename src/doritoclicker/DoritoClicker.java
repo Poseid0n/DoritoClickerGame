@@ -84,7 +84,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(150, Short.MAX_VALUE)
+                .addContainerGap(161, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
@@ -105,7 +105,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         });
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel4.setText("AutoCrumncher (0 owned)");
+        jLabel4.setText("AutoCrumncher (0)");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/doritoclicker/resource/icon.png"))); // NOI18N
         jLabel5.setText("15");
@@ -121,7 +121,7 @@ public class DoritoClicker extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("Dashing Black Man (0 owned)");
+        jLabel7.setText("Dashing Black Man (0)");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/doritoclicker/resource/icon.png"))); // NOI18N
         jLabel8.setText("500");
@@ -173,9 +173,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
@@ -236,6 +234,6 @@ public class DoritoClicker extends javax.swing.JFrame {
         jLabel4.setText("AutoCrumncher ("+ac.getAmount()+")");
         jLabel6.setText(doritos.getDoritos() + " doritos to spend.");
         jLabel8.setText(dbm.getPrice()+"");
-        jLabel7.setText("Dashing Black Man("+dbm.getAmount()+")");
+        jLabel7.setText("Dashing Black Man ("+dbm.getAmount()+")");
     }
 }
