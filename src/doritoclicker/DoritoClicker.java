@@ -13,7 +13,7 @@ public class DoritoClicker extends javax.swing.JFrame {
     Doritos doritos;
     AutoCrumncher ac;
     public DoritoClicker() {
-        ac = new AutoCrumncher(this, "AutoCrumncher");
+        ac = new AutoCrumncher(this, "AutoCrumncher", 1, 1, 10);
         doritos = new Doritos();
         initComponents();
         String imagePath = "resource/icon.png";
@@ -86,7 +86,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(96, Short.MAX_VALUE)
+                .addContainerGap(85, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
@@ -152,7 +152,9 @@ public class DoritoClicker extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, Short.MAX_VALUE))
         );
 
         pack();
