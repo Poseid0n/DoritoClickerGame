@@ -269,7 +269,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         jLabel6.setText(doritos.getDoritos() + " doritos to spend.");
         jLabel8.setText(dbm.getPrice() + "");
         jLabel7.setText("Dashing Black Man (" + dbm.getAmount() + ")");
-        jLabel9.setText(df.getPrice() + "");
-        jLabel10.setText("Dorito Farm (" + df.getAmount() + ")");
+        jLabel10.setText(df.getPrice() + "");
+        jLabel9.setText("Dorito Farm (" + df.getAmount() + ")");
     }
 }
