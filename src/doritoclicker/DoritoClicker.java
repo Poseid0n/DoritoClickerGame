@@ -14,8 +14,8 @@ public class DoritoClicker extends javax.swing.JFrame {
     Upgrade_AutoCrumncher ac;
     Upgrade_DashingBlackMan dbm;
     public DoritoClicker() {
-        ac = new Upgrade_AutoCrumncher(this, "AutoCrumncher", 1, 1, 10);
-        dbm = new Upgrade_DashingBlackMan(this, "Dashing Black Man", 500, 5, 300);
+        ac = new Upgrade_AutoCrumncher(this, "AutoCrumncher", 1, 15, 10);
+        dbm = new Upgrade_DashingBlackMan(this, "Dashing Black Man", 5, 200, 300);
         doritos = new Doritos();
         initComponents();
         String imagePath = "resource/icon.png";
@@ -76,10 +76,10 @@ public class DoritoClicker extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(405, 405, 405)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(277, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(409, Short.MAX_VALUE))
+                .addGap(262, 262, 262))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +130,6 @@ public class DoritoClicker extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -144,7 +143,8 @@ public class DoritoClicker extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(374, 597, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +235,7 @@ public class DoritoClicker extends javax.swing.JFrame {
         jLabel5.setText(ac.getPrice()+"");
         jLabel4.setText("AutoCrumncher ("+ac.getAmount()+")");
         jLabel6.setText(doritos.getDoritos() + " doritos to spend.");
-        jLabel7.setText(dbm.getPrice()+"");
-        jLabel8.setText("Dashing Black Man("+ac.getAmount()+")");
+        jLabel8.setText(dbm.getPrice()+"");
+        jLabel7.setText("Dashing Black Man("+ac.getAmount()+")");
     }
 }
